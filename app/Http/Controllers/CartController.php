@@ -57,4 +57,3 @@ class CartController extends Controller
         return back()->with('success', 'Item removed from cart!');
     }
 }
-

@@ -43,7 +43,7 @@
                             @method('DELETE')
                             <button type="submit" class="fas fa-trash"></button>
                         </form>
-                        <img src="{{ url('frontend/Assets/bakery/' . strtolower($cart->item_name) . '.jpg') }}" alt="{{ $cart->item_name }}">
+                        
                         <div class="content">
                             <h3>{{ $cart->item_name }}</h3>
                             <span class="price">Rs {{ $cart->price }}/-</span><br>
@@ -64,11 +64,12 @@
             </div>
         @endif
     </div>
-</header>
+
 
 <form action="" class="login-form">
     <h3>Login Now</h3>
     <p>Don't have an account? <a href="{{ url('/Register') }}">Create now</a></p>
 </form>
+</header>
 </body>
 </html>
